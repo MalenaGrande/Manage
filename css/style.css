@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2? family= Be+Vietnam+Pro & family= Roboto & display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+html{
+    font-size: 18px;
+}
+
+/*Seccion header*/
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f8f8f8;
+    height: 174px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #242E52;
+    margin-left: 20px;
+}
+
+header nav ul a:hover {
+    color: rgb(143, 148, 167);
+}
+
+header>button {
+    border: none;    
+    color: #FFFFFF;
+    background-color: #F3603B;
+    padding: 12px 30px 12px 30px;
+    border-radius: 50px;
+    box-shadow: -16px 6px 35px -13px rgba(0,0,0,0.6);
+}
+
+button:hover {
+    color: #F3603B;
+    background-color: #232C50;
+}
+
+header>div {
+    display: none;
+}
+
+/*Seccion main*/
+
+main section.home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    margin-left: 25px;
+}
+
+main section.home article {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+main section.home article p:nth-of-type(1) {
+    color: #232C50;
+    font-size: 3rem;
+    font-weight: 700, bold;
+}
+
+main section.home article p:nth-of-type(2) {
+    Width: 300px;
+    margin-top: 28px;
+    font-weight: 500, medium;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+main section.home article button {
+    color: #FFFFFF;
+    background-color: #F3603B;
+    border: none;
+    width: 134px;
+    margin-top: 30px;
+    padding: 12px 30px 12px 30px;
+    border-radius: 50px;
+    box-shadow: -16px 6px 35px -13px rgba(0,0,0,0.6);
+}
+
+main section.home article button:hover {
+    color: #F3603B;
+    background-color: #232C50;
+}
+
+/* seccion cosejos */
+
+main section.consejos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+main section.consejos div.diferencial {
+    display: flex;
+    flex-direction: column;
+    width: 433px;
+    margin-right: 60px;
+}
+
+main section.consejos>div.diferencial p:nth-of-type(1) {
+    color: #232C50;
+    font-size: 2.6rem;
+    font-weight: 700, bold;
+}
+
+main section.consejos>div.diferencial p:nth-of-type(2) {
+    padding: 20px 140px 0px 0px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+
+main section.consejos>div article {
+    width: 550px;
+    padding: 20px;
+}
+
+
+main section.consejos div article>p{
+    padding: 5px 15px 0px 90px;
+    color: rgb(129, 129, 129);
+    line-height: 1.5rem;
+}
+
+
+main section.consejos>div article div{
+    display: flex;
+    align-items: center;
+}
+
+main section.consejos>div article div button {
+    background-color: #F3603B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+main section.consejos>div article div button:hover{
+    color: #F3603B;
+    background-color: #232C50;
+}
+
+main section.consejos>div article div p {
+    color: #323851;
+    margin-left: 23px;
+    font-weight: 700;
+}
+
+/* Seccion testimonios */
+
+main section.testimonios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section.testimonios>h2 {
+    color: #242E52;
+    margin: 70px 0px;
+    font-size: 2.4rem;
+    font-weight: 700 bold;
+}
+
+main section.testimonios div.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main section.testimonios button{
+    border: none;
+    color: #FFFFFF;
+    background-color: #F3603B;
+    padding: 12px 30px 12px 30px;
+    border-radius: 50px;
+    box-shadow: -16px 6px 35px -13px rgba(0,0,0,0.6);
+    transition: 0.5s;
+}
+
+main section.testimonios button:hover{
+    color: #F3603B;
+    background-color: #232C50;
+    transform: scale(1.2);
+    transform-origin: center
+}
+
+main section.testimonios div.cards article {
+    color: rgb(129, 129, 129);
+    position: relative;
+    max-width: 445px;
+    margin: 10px 20px 84px 20px;
+}
+
+main section.testimonios div.cards article img {
+    width: 90px;
+    position: absolute;
+    bottom: 80%;
+    left: calc(50% - (90px / 2));
+}
+
+main section.testimonios div>article {
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 70px 28px 40px 28px;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    transition: 0.75s;
+}
+
+main section.testimonios div>article:hover{
+    transform: scale(1.1);
+}
+
+main section.testimonios div article h6 {
+    color: #3F4868;
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+/* seccion banner */
+
+main section.banner {
+    background-color:#F3613C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+main section.banner p {
+    color: #FFFFFF;
+    width: 570px;
+    font-size: 2rem;
+    font-weight: 700, Bold;
+    padding: 64px 0px 64px 165px;
+}
+
+main section.banner button {
+    border: none;
+    background-color: #FFFFFF;
+    color: #F3603B;
+    padding: 12px 30px;
+    border-radius: 50px;
+    margin-right: 160px;
+    box-shadow: -16px 6px 35px -13px rgba(0,0,0,0.6);
+}
+
+main section.banner button:hover{
+    background-color: #232f47;
+    color: #ffffff;
+}
+
+
+/* seccion footer */
+footer{
+    background-color: #1E1E26;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer section article.redes {
+    margin: 70px 0px 0px 100px;
+}
+
+footer section article.redes div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+footer section article.redes div a i {
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+footer section article.redes div a i:hover{
+    color: #F3603B;
+    transform: scale(1.3);
+}
+footer section article.secondMenu {
+    display: flex;
+}
+
+footer section article.secondMenu nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0px 150px;
+    font-weight: 400;
+}
+
+footer section article.secondMenu nav a {
+    text-decoration: none;
+    color: #8C8C94;
+    padding: 10px ;
+}
+
+footer section article.secondMenu nav a:hover {
+    color: #F3603B;
+}
+
+footer section article.email {
+    margin-top: 55px;
+}
+
+footer section article.email form input {
+    border: none;
+    border-radius: 50px;
+    padding: 12px 48px 12px 10px;
+}
+
+footer section article.email form button {
+    border: none;
+    color: #FFFFFF;
+    background-color: #F3603B;
+    border-radius: 50px;
+    padding: 11px 22px;
+}
+
+footer section article.email form button:hover {
+    background-color: #ffffff;
+    color: #F3603B;
+
+}
+
+footer>p {
+    color: #8C8C94;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500, Medium;
+    font-size: 0.8rem;
+    padding: 20px;
+}
+
+
+@media (max-width: 900px) {
+    html{
+        font-size: 12px;
+    }
+    
+    header nav {
+        display: none;
+    }
+
+    header button{
+        display: none;
+    }
+
+    main section.home {
+
+        flex-direction: column-reverse;
+    }
+
+    main section.home article {
+        align-items: center;
+        text-align: center;
+    }
+    
+    main section.consejos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section.consejos div.diferencial {
+        margin: 40px 0px 0px 0px;
+        text-align: center;
+    }
+
+    main section.consejos>div.diferencial p:nth-child(2) {
+        padding: 20px 0px;
+    }
+
+    section.consejos div>article {
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+
+    section.testimonios div.cards {
+        flex-direction: column;
+    }
+
+    section.testimonios div.cards article:nth-child(1), div.cards article:nth-child(3) {
+        display: none;
+    }
+
+    section.banner {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main section.banner p {
+        padding: 30px;
+    }
+
+    main section.banner button {
+        margin: 15px 0px;
+    }
+
+    footer section {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    footer section article.redes {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+
+    footer section article.redes div {
+        padding-bottom: 40px;
+    } 
+
+    footer section article.secondMenu nav {
+        padding: 20px 50px;
+    }
+
+    footer>p {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+    header {
+        height: 15vh;
+        justify-content: space-between;
+    }
+    header>div {
+        display: flex;
+        padding: 0px 10px;
+        font-size: 2.5rem;
+    }
+    header>div a i {
+        color: #232C50;
+    }
+    header>h1 {
+        padding: 15px 0px 0px 10px;
+    }
+
+    main {
+        border: 5px red;
+    }
+
+    section.home {
+        max-width: 100%;
+        padding-right: 15px;
+    }
+
+    main section.home article {
+        max-width: 300px;
+        align-items: center;
+    }
+
+    main section.home img {
+        width: 100%;
+    }
+
+    main section.consejos div.diferencial {
+        max-width: 250px;
+    }
+
+    main section.consejos div article div {
+        background-color: rgb(255, 239, 234);
+        border-radius: 50px 0px 0px 50px;
+        max-width: 350px;
+    }
+
+    main section.consejos div article {
+        margin: 0px;
+        max-width: 320px;
+    }
+
+    main section.consejos div article>p {
+        margin-left: 0px;
+        padding: 10px 0px;
+    }
+
+    main section.testimonios div>article:hover{
+        transform: scale(1);
+    }
+    
+    main section.testimonios button:hover {
+        transform: scale(1);
+    }
+
+    main section.banner>p {
+        text-align: center;
+        margin-left: 0px;
+        max-width: 300px;
+    }
+
+} 
